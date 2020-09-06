@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Rye);
+
+.title {
+  font-size: 7em; 
+  font-family: 'Rye', cursive;
+  font-weight: normal; 
+  text-align: center;
+  border-bottom: dotted 3px black;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+ul {
+  text-align: center;
+}
+ul li, a:link, a:visited, a:active{
+  color: black;
+  font-family: cursive, serif;
+  text-decoration: none; 
+  font-size: 1.25em;
+  display:inline;
+  text-transform:uppercase; 
+  margin: 0.25em; 
+}
+ul li a:hover {
+  border-bottom: solid 2px black;
+  color:salmon;
+}

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HomeService } from './../../services/home/home.service';
+import { Password } from './../../model/password';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  clickMessage:string;
+  password: Password = null;
+  constructor(private homeService: HomeService) { }
+
+  generatePassword() {
+    this.clickMessage = 'generate password clicked';
+    this.password = this.homeService.generatePassword();
+
+    console.log("password is :"+ this.password.passwordValue);
+
+  }
 
   ngOnInit(): void {
+    
   }
 
 }
