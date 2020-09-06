@@ -1,0 +1,33 @@
+
+.button {
+  border:0;
+  border-radius:0;
+  padding:15px 0;
+  font-size:2rem;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  background:#436b85;
+  color:#ffffff;
+  -webkit-appearance: none;
+  display:inline;
+  &:hover, &:focus {
+    background:darken(#436b85,20%);
+  }
+}
+
+.button-block {
+  display:block;
+  width:40%;
+}
+
+.vertical-center {
+  margin: 10px 0px 10px 40%;
+  top: 50%;
+}
+
+.pass {
+  font-size: 2em; 
+  font-family:  cursive;
+  font-weight: normal;
+}
